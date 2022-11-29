@@ -1,0 +1,13 @@
+// Pour identifier la position d'un élément sur le fureteur
+@mixin _debug{
+    border: 5px red dotted;
+}
+
+// Raccourci pour la disposition d'un élément flex
+@mixin _flex ($direction,$justify,$align) {
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    display: flex;
+}
+
