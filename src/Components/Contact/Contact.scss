@@ -1,0 +1,12 @@
+@import '../../Styles/_style';
+
+.container{
+    @include _flex(column,flex-start,center);
+    height:100vh;
+    width: 80vw;
+    background-color: rgb(236, 236, 236);
+
+    & h2 {
+    font-size: 40px;
+    }
+}
