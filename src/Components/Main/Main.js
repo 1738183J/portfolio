@@ -8,7 +8,7 @@ function Main() {
         <div className='home-photo'>
             <div className='petit-cercle'></div>
             <div className='cercle'></div>
-            <img src = {hero2}/>
+            <img src = {hero2} alt=""/>
         </div>
         <div className='home-presentation'>
             <h3>WHO AM I ?</h3>

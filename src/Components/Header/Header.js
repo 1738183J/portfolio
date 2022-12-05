@@ -18,7 +18,7 @@ const Header = props => {
             </aside>
             <div className="navbar-container">
                 <Navbar/>
-            <img className="hero" src = {hero}/>
+            <img className="hero" src = {hero} alt=""/>
             </div>
         </div>
     );

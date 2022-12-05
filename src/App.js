@@ -9,7 +9,7 @@ import './App.scss';
 function App() {
 
   return (
-    <div className="OnePagerContainer" style={{ backgroundImage:`url(${background})`, backgroundRepeat:"repeat", position: "relative"}}>
+    <div className="OnePagerContainer" alt="" style={{ backgroundImage:`url(${background})`, backgroundRepeat:"repeat", position: "relative"}}>
       <Header/>
       <Main/>
       <Works/>

@@ -7,8 +7,8 @@ const Grid = props => {
 
     return (
         <div className="grid-container">
-            <div className='item'><a href="https://adroise.netlify.app/"><img src = {Ardoise} className="ardoise"/></a></div>
-            <div className='item'><a href="https://jacobgodbout3.myportfolio.com/"><img src = {Portfolio} className="portfolio"/></a></div>
+            <div className='item'><a href="https://adroise.netlify.app/"><img src = {Ardoise} className="ardoise" alt=""/></a></div>
+            <div className='item'><a href="https://jacobgodbout3.myportfolio.com/"><img src = {Portfolio} className="portfolio" alt=""/></a></div>
             <div className='item'>3</div>
             <div className='item'>4</div>
             <div className='item'>5</div>
