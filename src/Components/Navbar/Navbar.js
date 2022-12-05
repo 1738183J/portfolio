@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React from "react";
 import './Navbar.scss';
 
 const Navbar = props => {
