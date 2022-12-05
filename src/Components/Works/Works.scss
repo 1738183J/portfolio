@@ -8,17 +8,17 @@
 
 .selection{
     @include _flex(column,center,center);
-    height:45%;
+    height:35%;
     width: 100%;
 
     & h2{
-        font-size: 40px;
-        margin:1em;
+        font-size: 32px;
     }
 }
 
 .choice{
     @include _flex(row,space-between,flex-start);
+    font-size: 12px;
     font-weight: 500;
     list-style: none;
     padding-left:0px;

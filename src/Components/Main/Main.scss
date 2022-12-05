@@ -1,0 +1,65 @@
+@import '../../Styles/_style';
+
+.home-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(236, 236, 236);
+  width: 80vw;
+  height: 120vh;
+}
+
+.home-photo {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 40%;
+}
+
+
+.home-photo img {
+  position: absolute;
+  width: 25vw;
+  border-radius: 300px;
+}
+.home-photo div.cercle {
+  position: relative;
+  top: -24vh;
+  left: -6vw;
+  background-color: rgb(34, 34, 34);
+  right: 20px;
+  height: 320px;
+  width: 320px;
+  border-radius: 300px;
+
+}
+
+.home-photo div.petit-cercle {
+  position: relative;
+  top: -12vh;
+  left: 8vw;
+  background-color: rgb(107, 107, 107);
+  right: 20px;
+  height: 80px;
+  width: 80px;
+  border-radius: 300px;
+}
+
+.home-presentation {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  width: 33%;
+
+  & h3{
+    margin: 0px;
+    font-size: 32px;
+  }
+
+  & p{
+    font-size: 14px;
+  }
+}
