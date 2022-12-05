@@ -1,46 +1,36 @@
 import React from "react";
 import "./Contact.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import hero from '../../Images/hero.png';
+import Instagram from '../../Images/instagram.png';
+import Linkedin from '../../Images/linkedin.png';
+import Facebook from '../../Images/facebook.png';
 
 const Contact = props => {
 
     return (
         <Container>
             <Row className="mb-5 mt-3">
-              <Col lg="8">
-                <h2 className="display-4 mb-4">
-                    Contact
-                </h2>
-              </Col>  
+                <h2 className="display-4 mb-4">Contact</h2>
             </Row>
-            <Row lg = "7" className="d-flex align-items-center">
+            <Row className="form-contact">
                 <form className="contact_form w-100">
-                    <Row>
-                        <Col lg ='6' className="form-group">
-                            <h3>
-                             Name
-                            </h3>
-                            <input
-                                className="form-control rounded-0"
-                                id="name"
-                                name="name"
-                                placeholder="Name"
-                                type="text"/>
-                            <h3>
-                             Email adress
-                            </h3>
-                            <input
-                                className="form-control rounded-0" id="email" name="email" placeholder="Email adress" type="email"/>
-                            <h3>
-                             Message
-                            </h3>
-                            <textarea className="form-control" name="message" id ="message" placeholder="Message" rows ='5'>
-                            </textarea>
+                        <Col className="form-group">
+                            <h3>Name</h3>
+                            <input className="form-control" id="name" name="name" placeholder="Name" type="text"/>
+                            <h3> Email adress </h3>
+                            <input className="form-control" id="email" name="email" placeholder="Email adress" type="email"/>
+                            <h3>Message</h3>
+                            <textarea className="form-control3" name="message" id ="message" placeholder="Message" rows ='5'></textarea>
+                            <Col className="form-group">
+                                <button className="submit-btn" type="submit">Submit</button>
                             </Col>
-                    </Row>
+                            <div className="media-btn">
+                                <button><a href="https://www.linkedin.com/in/jacob-godbout-4853a6220/"><img src = {Linkedin} className="reseau-icon" alt=""/></a></button>
+                                <button><a href="https://www.instagram.com/jacobgodbout3/"><img src = {Instagram} className="reseau-icon" alt=""/></a></button>
+                                <button><a href="https://www.facebook.com/jacob.godbout.98"><img src = {Facebook} className="reseau-icon" alt=""/></a> </button>
+                            </div>
+                        </Col>
                 </form>
-
             </Row>
         </Container>
     );

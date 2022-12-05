@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import "./App.scss";
+import React from "react";
+import Main from './Components/Main/Main';
+import Works from './Components/Works/Works';
+import Header from './Components/Header/Header';
+import Contact from './Components/Contact/Contact';
+import background from './Images/background.png';
+import './App.scss';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to do something.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lol React
-        </a>
-      </header>
+    <div className="OnePagerContainer" alt="" style={{ backgroundImage:`url(${background})`, backgroundRepeat:"repeat", position: "relative"}}>
+      <Header/>
+      <Main/>
+      <Works/>
+      <Contact/>
     </div>
   );
+  
 }
 
 export default App;
