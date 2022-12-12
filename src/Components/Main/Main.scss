@@ -1,26 +1,124 @@
 @import '../../Styles/_style';
 
+@media (min-width: 320px){
+  .home-container {
+    @include _flex(column,center,center);
+    width: 95vw;
+    background-color: rgb(236, 236, 236);
+  }
+  
+  .home-photo img {
+    position: absolute;
+    z-index: 1;
+    top:28em;
+    left:40vw;
+    width: 45vw;
+    border-radius: 300px;
+  }
+
+  .home-photo div.cercle {
+    position: relative;
+    z-index: 0.5;
+    top: -3vh;
+    left: -10vw;
+    background-color: rgb(34, 34, 34);
+    right: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 300px;
+  
+  }
+  
+  .home-photo div.petit-cercle {
+    position: relative;
+    z-index: 0;
+    top: 4vh;
+    left: 38vw;
+    background-color: rgb(107, 107, 107);
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 300px;
+  }
+
+  .home-presentation{
+    padding: 8vw;
+  }
+}
+
+@media (min-width: 375px){
+
+  .home-photo img {
+    top:64vh;
+    left:44vw;
+    width: 40vw;
+  }
+
+}
+
+@media (min-width: 764px){
+
+  .home-container {
+    @include _flex(row,center,center);
+    width: 95vw;
+    height: 60vh;
+  }
+
+  .home-photo {
+    @include _flex(column,center,center);
+    width: 40%;
+  }
+
+  .home-presentation{
+    padding:2vw;
+    width: 35%;
+  }
+
+  .home-photo img {
+    top:110vh;
+    left:20vw;
+    width: 25vw;
+  }
+
+  .home-photo div.cercle {
+    top: -8vh;
+    left: -8vw;
+    height: 260px;
+    width:  260px;
+  
+  }
+  
+  .home-photo div.petit-cercle {
+    position: relative;
+    z-index: 0;
+    top: -1vh;
+    left: 5vw;
+    background-color: rgb(107, 107, 107);
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 300px;
+  }
+
+}
+
+@media (min-width: 922px){
 .home-container {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  @include _flex(row,center,center);
   background-color: rgb(236, 236, 236);
   width: 80vw;
   height: 120vh;
 }
 
 .home-photo {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  @include _flex(column,center,center);
   width: 40%;
 }
 
-
 .home-photo img {
   position: absolute;
+  top:118vh;
+  left:24vw;
   width: 25vw;
   border-radius: 300px;
 }
@@ -33,7 +131,6 @@
   height: 320px;
   width: 320px;
   border-radius: 300px;
-
 }
 
 .home-photo div.petit-cercle {
@@ -48,10 +145,8 @@
 }
 
 .home-presentation {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  display: flex;
+  @include _flex(column,flex-start,flex-start);
+  padding: 0vw;
   width: 33%;
 
   & h3{
@@ -62,4 +157,5 @@
   & p{
     font-size: 14px;
   }
+}
 }

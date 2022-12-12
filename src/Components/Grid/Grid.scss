@@ -1,5 +1,80 @@
 @import '../../Styles/_style';
 
+@media (min-width: 320px){
+
+  .grid-container {
+    @include _flex(column,center,center);
+  }
+
+  .item {
+    @include _flex(column,center,center);
+    margin-bottom: 1em;
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(77, 77, 77);
+
+    & img{
+      width:100%;
+    }
+  }
+
+}
+
+@media (min-width: 375px){
+
+  .item {
+    @include _flex(column,center,center);
+    margin-bottom: 1em;
+    width: 100%;
+    height: 18em;
+    background-color: rgb(77, 77, 77);
+
+    & img{
+      width:100%;
+    }
+  }
+
+}
+
+@media (min-width: 764px){
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 14rem 18rem;
+    column-gap: 6rem;
+    row-gap: 1rem;
+  }
+  
+  .item {
+    @include _flex(column,center,center);
+    width: 18rem;
+    height: 15rem;
+    background-color: rgb(77, 77, 77);
+  
+    & a:hover{
+      background-color: rgb(0, 0, 0);
+    }
+  
+    & .item:hover{
+      background-color: rgb(0, 0, 0);
+    }
+  }
+  
+  .portfolio{
+    width:100%;
+    height: 100%;
+  }
+  
+  .ardoise{
+    width:100%;
+    height: 100%;
+  }
+  
+  
+}
+
+@media (min-width: 922px){
+
 .grid-container {
   @include _flex(row,center,center);
   display: grid;
@@ -32,4 +107,6 @@
 .ardoise{
   width:100%;
   height: 100%;
+}
+
 }
