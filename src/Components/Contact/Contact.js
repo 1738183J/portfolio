@@ -26,9 +26,9 @@ const Contact = props => {
                                 <button className="submit-btn" type="submit">Submit</button>
                             </Col>
                             <div className="media-btn">
-                                <button><a href="https://www.linkedin.com/in/jacob-godbout-4853a6220/"><img src = {Linkedin} className="reseau-icon" alt=""/></a></button>
-                                <button><a href="https://www.instagram.com/jacobgodbout3/"><img src = {Instagram} className="reseau-icon" alt=""/></a></button>
-                                <button><a href="https://www.facebook.com/jacob.godbout.98"><img src = {Facebook} className="reseau-icon" alt=""/></a> </button>
+                                <a className="btn-m" href="https://www.linkedin.com/in/jacob-godbout-4853a6220/"><img href="https://www.linkedin.com/in/jacob-godbout-4853a6220/" src = {Linkedin} className="reseau-icon" alt=""/></a>
+                                <a className="btn-m" href="https://www.instagram.com/jacobgodbout3/"><img src = {Instagram} className="reseau-icon" alt=""/></a>
+                                <a className="btn-m" href="https://www.facebook.com/jacob.godbout.98"><img src = {Facebook} className="reseau-icon" alt=""/></a> 
                             </div>
                             <Col className="form-group2">
                                 <a className="cv-btn" download={cv} href={cv}>Download my CV</a>

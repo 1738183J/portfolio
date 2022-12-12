@@ -54,7 +54,9 @@
         .media-btn{
             @include _flex(row,space-around,center);
             padding-top: 3em;
-            button {
+
+            .btn-m {
+                @include _flex(row,center,center);
                 width:40px;
                 height:40px;
                 border-radius: 20px;
