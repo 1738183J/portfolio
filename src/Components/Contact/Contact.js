@@ -18,7 +18,7 @@ const Contact = props => {
                         <Col className="form-group">
                             <h3>Name</h3>
                             <input className="form-control" id="name" name="name" placeholder="Name" type="text"/>
-                            <h3> Email adress </h3>
+                            <h3> Email adresse </h3>
                             <input className="form-control" id="email" name="email" placeholder="Email adress" type="email"/>
                             <h3>Message</h3>
                             <textarea className="form-control3" name="message" id ="message" placeholder="Message" rows ='5'></textarea>
