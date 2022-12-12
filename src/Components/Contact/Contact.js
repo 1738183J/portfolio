@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.scss";
 import { Container, Row, Col } from "react-bootstrap";
+import cv from '../../pdf/Cv.pdf';
 import Instagram from '../../Images/instagram.png';
 import Linkedin from '../../Images/linkedin.png';
 import Facebook from '../../Images/facebook.png';
@@ -29,6 +30,9 @@ const Contact = props => {
                                 <button><a href="https://www.instagram.com/jacobgodbout3/"><img src = {Instagram} className="reseau-icon" alt=""/></a></button>
                                 <button><a href="https://www.facebook.com/jacob.godbout.98"><img src = {Facebook} className="reseau-icon" alt=""/></a> </button>
                             </div>
+                            <Col className="form-group2">
+                                <a className="cv-btn" download={cv} href={cv}>Download my CV</a>
+                            </Col>
                         </Col>
                 </form>
             </Row>

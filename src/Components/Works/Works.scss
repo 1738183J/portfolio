@@ -1,8 +1,63 @@
 @import '../../Styles/_style';
 
+@media (min-width: 320px){
+
+.works-container{
+    width: 95vw;
+    background-color: rgb(250, 250, 250);
+}
+
+.selection{
+    @include _flex(column,center,center);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    & h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+}
+.choice{
+    @include _flex(row,space-between,flex-start);
+    width: 80%;
+    font-size: 12px;
+    font-weight: 500;
+    list-style: none;
+    padding-left:0px;
+
+    & :hover{
+        cursor: pointer;
+        color: rgb(58, 58, 58);
+        text-decoration: underline 5px;
+        text-decoration-color: cyan;
+    }
+
+}
+
+}
+
+@media (min-width: 764px){
+
+    .works-container{
+        @include _flex(column,flex-start,center);
+        background-color: rgb(250, 250, 250);
+        height: 140vh;
+    }
+
+    .selection{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+}
+
+@media (min-width: 922px){
+    
 .works-container{
     @include _flex(column,flex-start,center);
     background-color: rgb(250, 250, 250);
+    width: 80vw;
     height: 130vh;
 }
 
@@ -10,6 +65,8 @@
     @include _flex(column,center,center);
     height:35%;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     & h2{
         font-size: 32px;
@@ -18,6 +75,8 @@
 
 .choice{
     @include _flex(row,space-between,flex-start);
+    padding-top:0px;
+    padding-bottom:0px;
     font-size: 12px;
     font-weight: 500;
     list-style: none;
@@ -31,4 +90,6 @@
         text-decoration: underline 5px;
         text-decoration-color: cyan;
     }
+}
+
 }

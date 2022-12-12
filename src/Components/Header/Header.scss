@@ -1,10 +1,142 @@
 @import '../../Styles/_style';
 
+@media (min-width: 320px) {
+
+  .header-container {
+    margin-top: 0vh;
+    @include _flex(column,center,center);
+    color: white;
+  }
+
+  aside {
+    @include _flex(column,center,center);
+    background-color: rgb(26, 26, 26);
+    font-weight: 400;
+    width: 100%;
+    & h2:first-child{
+      font-size: 20px;
+    }
+  }
+
+  .top{
+    @include _flex(row,center,center);
+    width: 100%;
+    & span {
+      position: relative;
+      left:-10%;
+    }
+  }
+
+  .hero {
+    position:relative;
+    width: 100%;
+  }
+
+.name {
+  @include _flex(column,center,flex-start);
+  background: rgba(0, 0, 0, 0.3); 
+  position: absolute;
+  z-index: 1;
+  width:30vh;
+  top:18vh;
+
+  & h2{
+    font-size: 24px;
+    font-family: 'Nunito-Bold';
+    margin: 0px;
+  }
+
+  & h3 {
+    font-family: 'Nunito-Medium';
+    margin: 0px;
+  }
+
+  & .nom3{
+    color: #000;
+    font-family: 'Nunito-ExtraBold';
+    font-size: 12px;
+    margin:0px;
+    margin-top: 0.3em;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius: 2px;
+    background-color: yellow;
+  }
+
+}
+  
+}
+
+@media (min-width: 375px){
+
+  .name {
+    @include _flex(column,center,flex-start);
+    background: rgba(0, 0, 0, 0.3); 
+    position: absolute;
+    z-index: 1;
+    top:22vh;
+  }
+
+  .top{
+    & span {
+      left:-12%;
+    }
+  }
+
+}
+
+
+@media (min-width:764px){
+
+  .header-container {
+    @include _flex(column,center,center);
+    color: white;
+  }
+  
+  .top{
+    & span {
+      font-size: 2em;
+      left:-33%;
+    }
+  }
+
+  aside {
+    @include _flex(column,center,center);
+    & h2:first-child{
+      font-size: 20px;
+    }
+  }
+
+  .name{
+    width: 40vw;
+    height: 15vh;
+    top:40vh;
+
+    & .nom{
+      font-size: 1.6em;
+    }
+
+    & .nom2{
+      font-size: 2em;
+    }
+
+    & .nom3{
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-top: 0.5em;
+    }
+  }
+
+}
+
+@media (min-width: 992px){
+
 .header-container {
+  @include _flex(row,center,stretch);
   margin-top: 12vh;
-  display: flex;
   width: 80vw;
-  color: white;
 }
 
 aside {
@@ -18,16 +150,22 @@ aside {
   }
 }
 
+.top{
+  @include _flex(row,center,center);
+  width: 100%;
+  & span {
+    display: none;
+  }
+}
+
 .name {
+  @include _flex(column,center,flex-start);
   position: relative;
+  width: 35vw;
   top: -20vh;
-  left: 35%;
-}
+  left: 38%;
 
-.name:hover {
-  cursor: pointer;
-}
-
+  
 .nom {
   margin:0px;
   font-size: 32px;
@@ -41,10 +179,12 @@ aside {
 }
 
 .nom3 {
-  width:75%;
   margin:0px;
+  margin-top: 0.5em;
   font-size: 16px;
-  padding: 3px;
+  padding: 20px;
+  padding-top:10px;
+  padding-bottom:10px;
   color: #000;
   border-radius: 1px;
   text-align: center;
@@ -53,6 +193,12 @@ aside {
 
 .nom3:hover {
   color: rgb(119, 119, 119);
+}
+
+}
+
+.name:hover {
+  cursor: pointer;
 }
 
 .navbar-container {
@@ -66,4 +212,4 @@ aside {
   width: 100%;
 }
 
-
+}

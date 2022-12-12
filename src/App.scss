@@ -1,13 +1,27 @@
 @import './Styles/_style';
 
+@media (min-width: 320px){
+
+  .App {
+    text-align: center;
+  }
+  
+  .OnePagerContainer{
+    @include _flex(column,flex-start,center);
+    font-family: 'Nunito-Regular';
+  }
+  
+  
+}
+
+@media (min-width: 922px){
 
 .App {
-  text-align: center;
+
 }
 
 .OnePagerContainer{
   @include _flex(column,flex-start,center);
-  font-family: 'ShipporiAntiqueB1-Regular';
-  font-family: 'BalooBhaijaan2-SemiBold';
-  
+}
+
 }

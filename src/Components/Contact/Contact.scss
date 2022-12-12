@@ -1,7 +1,110 @@
 @import '../../Styles/_style';
 
+@media (min-width: 320px){
+
+    .container{
+        @include _flex(column,center,center);
+        width:95vw;
+        background-color: rgb(236, 236, 236);
+    
+        & h2 {
+        font-size: 36px;
+    
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline 3px;
+            text-decoration-color: rgb(0, 0, 0);
+        }
+    
+        }
+    
+        .form-contact{
+            width: 80%;
+            font-size: 12px;
+            padding-bottom: 2em;
+        }
+    
+        .form-group{
+            width: 100%;
+        }
+    
+        .form-control{
+            padding-left: 0.5em;
+            border:solid 1px;
+            border-radius: 4px;
+            width: 100%;
+            height: 20px;
+        }
+        .form-control3{
+            width: 100%;
+            padding-left: 0.5em;
+            padding-top: 0.5em;
+        }
+    
+        .submit-btn{
+            margin-top:1.5em;
+            color:#fff;
+            border-radius: 5px;
+            background-color: rgb(92, 92, 92);
+            width: 100%;
+            height: 30px;
+            align-items: center;
+        }
+    
+        .media-btn{
+            @include _flex(row,space-around,center);
+            padding-top: 3em;
+            button {
+                width:40px;
+                height:40px;
+                border-radius: 20px;
+                background-color: #fff;
+                border:1px;
+    
+                img{
+                    width:20px;
+                }
+            }
+        }
+
+        .form-group2{
+            @include _flex(column,center,center);
+                & .cv-btn{
+                  background-color: #fff;
+                  color: rgb(0, 0, 0);
+                  border-radius:20px;
+                  padding: 14px 25px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  margin-top: 3em;
+        
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 764px){
+
+    .container{
+        height:90vh;
+    .form-contact{
+        @include _flex(column,center,center);
+        font-size: 12px;
+        padding-bottom: 2em;
+    }
+    
+    
+    .form-group{
+        width: 50vw;
+    }
+    }
+}
+
+@media (min-width: 922px){
+
 .container{
-    @include _flex(column,center,center);
     height:120vh;
     width: 80vw;
     background-color: rgb(236, 236, 236);
@@ -18,6 +121,7 @@
     }
 
     .form-contact{
+        @include _flex(column,center,center);
         font-size: 12px;
         padding-bottom: 2em;
     }
@@ -27,12 +131,11 @@
     }
 
     .form-control{
-        font-size: 12px;
         padding-left: 0.5em;
         border:solid 1px;
         border-radius: 4px;
         width: 100%;
-        height: 25px;
+        height: 20px;
     }
     .form-control3{
         width: 100%;
@@ -42,12 +145,8 @@
 
     .submit-btn{
         margin-top:1.5em;
-        color:#fff;
-        border-radius: 5px;
-        background-color: rgb(92, 92, 92);
         width: 30%;
         height: 30px;
-        align-items: center;
     }
 
     .media-btn{
@@ -57,16 +156,14 @@
             width:40px;
             height:40px;
             border-radius: 20px;
-            background-color: #fff;
             border:1px;
 
             img{
                 width:20px;
             }
         }
-
-    
     }
 
+}
 
 }
