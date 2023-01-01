@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars} from "react-icons/fa";
 import Nav from "../Navbar/Navbar";
 import './Header.scss';
 import hero from '../../Images/hero.png';
