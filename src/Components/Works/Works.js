@@ -11,7 +11,7 @@ const Header = props => {
                 <div className='works-title'>
                     <h2>MY WORKS</h2>
                     <WorksFile/>
-                    <img src={WorksIcon} video={WorksFile}/>
+                    <img src={WorksIcon} video={WorksFile} alt="works"/>
                 </div>
                 <ul className='choice'>
                  

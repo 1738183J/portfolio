@@ -1,10 +1,6 @@
-import Header from "../Header/Header";
 import './Main.scss';
-import {ReactComponent as QuestionMark} from '../../Images/speech-bubble.svg';
 import Background from '../../Images/AdobeStock_522632252.jpeg';
 import style from '../../Images/style.png';
-import hand from '../../Images/hand.png';
-import hero2 from '../../Images/hero2.png';
 
 
 function Main() {
