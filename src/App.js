@@ -4,16 +4,21 @@ import Works from './Components/Works/Works';
 import Header from './Components/Header/Header';
 import Contact from './Components/Contact/Contact';
 import background from './Images/background.png';
+import Background from './Images/background2.png';
+
 import './App.scss';
 
 function App() {
 
   return (
-    <div className="OnePagerContainer" alt="" style={{ backgroundImage:`url(${background})`, backgroundRepeat:"repeat", position: "relative"}}>
+    <div className="OnePagerContainer" id="homeContainer" alt="" style={{ backgroundImage:`url(${Background})` , backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundSize:'cover' }}> 
+      <div className="shadow">
       <Header/>
       <Main/>
       <Works/>
       <Contact/>
+      </div>
+      <footer><i>@Jacob Godbout 2023</i></footer>
     </div>
   );
   

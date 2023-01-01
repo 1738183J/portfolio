@@ -1,19 +1,47 @@
-import React from "react";
-import './Navbar.scss';
+import React, {useState} from 'react'
 
-const Navbar = props => {
+const navLinks = [
+  {navLinkId: 'Home', scrollToId: 'homeContainer'}, // etc.
+  {navLinkId: 'About me', scrollToId: 'aboutContainer'}, // etc.
+  {navLinkId: 'Works', scrollToId: 'worksContainer'},
+  {navLinkId: 'Contact', scrollToId: 'contactContainer'},
+]
 
-    return (
-        
-        <div className='navbar'>
-            <ul className='LinksOnePager'>
-                <li>HOME</li>
-                <li>ABOUT ME</li>
-                <li>PROJECTS</li>
-                <li>CONTACT</li>
-            </ul>
-        </div>
-    );
+const NavLink = ({ navLinkId, scrollToId, activeNavLinkId, setActiveNavLinkId }) => {
+	const handleClick = () => {
+		setActiveNavLinkId(navLinkId);
+		document.getElementById(scrollToId).scrollIntoView({
+			behavior: 'smooth', // gives an ease-in-out effect to our scroll
+		});
+	};
+	
+	return (
+		<span 
+		 	id={navLinkId} 
+			className={activeNavLinkId === navLinkId ? 'activeClass' : ''} 
+		 	onClick={handleClick}
+		>
+			{navLinkId}
+		</span>
+	);
 };
 
-export default Navbar;
+const Nav = () => {
+	const [activeNavLinkId, setActiveNavLinkId] = useState('');
+
+	return (
+	    <nav>
+	      {navLinks.map(
+		({navLinkId, scrollToId}) =>
+		  <NavLink 
+			navLinkId={navLinkId} 
+			scrollToId={scrollToId} 
+			activeNavLinkId={activeNavLinkId}
+			setActiveNavLinkId={setActiveNavLinkId} 
+		  />
+	      )}
+	    </nav>
+	  )
+};
+
+export default Nav;

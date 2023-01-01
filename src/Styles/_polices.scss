@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('../fonts/Nunito-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Nunito-Regular';
@@ -44,41 +50,36 @@
 }
 
 @font-face {
-    font-family: 'BalooBhaijaan2-Regular';
-    src: url('../fonts/BalooBhaijaan2-Regular.woff2') format('woff2'),
-         url('../fonts/BalooBhaijaan2-Regular.woff') format('woff');
+    font-family: 'Quicksand-Bold';
+    src: url('../fonts/Quicksand-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'BalooBhaijaan2-Medium';
-    src: url('../fonts/BalooBhaijaan2-Medium.woff2') format('woff2'),
-         url('../fonts/BalooBhaijaan2-Medium.woff') format('woff');
+    font-family: 'Quicksand-Light';
+    src: url('../fonts/Quicksand-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'BalooBhaijaan2-SemiBold';
-    src: url('../fonts/BalooBhaijaan2-SemiBold.woff2') format('woff2'),
-         url('../fonts/BalooBhaijaan2-SemiBold.woff') format('woff');
+    font-family: 'Quicksand-Medium';
+    src: url('../fonts/Quicksand-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'BalooBhaijaan2-Bold';
-    src: url('../fonts/BalooBhaijaan2-Bold.woff2') format('woff2'),
-         url('../fonts/BalooBhaijaan2-Bold.woff') format('woff');
+    font-family: 'Quicksand-Regular';
+    src: url('../fonts/Quicksand-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'BalooBhaijaan2-ExtraBold';
-    src: url('../fonts/BalooBhaijaan2-ExtraBold.woff2') format('woff2'),
-         url('../fonts/BalooBhaijaan2-ExtraBold.woff') format('woff');
+    font-family: 'Quicksand-SemiBold';
+    src: url('../fonts/Quicksand-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
