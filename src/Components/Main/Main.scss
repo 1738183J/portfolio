@@ -3,70 +3,57 @@
 @media (min-width: 320px){
   .home-container {
     @include _flex(column,center,center);
-    width: 95vw;
-    background-color: rgb(236, 236, 236);
+    color:#fff;
   }
   
   .home-photo img {
-    position: absolute;
-    z-index: 1;
-    top:28em;
-    left:40vw;
-    width: 45vw;
-    border-radius: 300px;
-  }
-
-  .home-photo div.cercle {
-    position: relative;
-    z-index: 0.5;
-    top: -3vh;
-    left: -10vw;
-    background-color: rgb(34, 34, 34);
-    right: 20px;
-    height: 200px;
-    width: 200px;
-    border-radius: 300px;
-  
-  }
-  
-  .home-photo div.petit-cercle {
-    position: relative;
-    z-index: 0;
-    top: 4vh;
-    left: 38vw;
-    background-color: rgb(107, 107, 107);
-    right: 20px;
-    height: 60px;
-    width: 60px;
-    border-radius: 300px;
+    display: none;
+    width:95vw;
   }
 
   .home-presentation{
-    padding: 8vw;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding:1.5em;
+    margin:1em;
+
+    & .main-title{
+      color: #fff;
+      @include _flex(row,space-between,center);
+
+      & h3{
+        padding-right: 0.8em;
+      }
+ 
+      & svg:hover{
+        background-color: #fff;
+      }
+    }
+
+    & p{
+      font-family: "Quicksand-Light";
+      font-weight: 300;
+    }
+    
+
   }
-}
-
-@media (min-width: 375px){
-
-  .home-photo img {
-    top:64vh;
-    left:44vw;
-    width: 40vw;
-  }
-
 }
 
 @media (min-width: 764px){
 
   .home-container {
     @include _flex(row,center,center);
-    width: 95vw;
     height: 60vh;
   }
 
   .home-photo {
     @include _flex(column,center,center);
-    width: 40%;
+    width: 50%;
+
+    & img{
+      display: inline;
+      width:60vw;
+    }
   }
 
   .home-presentation{
@@ -74,80 +61,50 @@
     width: 35%;
   }
 
-  .home-photo img {
-    top:110vh;
-    left:20vw;
-    width: 25vw;
-  }
-
-  .home-photo div.cercle {
-    top: -8vh;
-    left: -8vw;
-    height: 260px;
-    width:  260px;
-  
-  }
-  
-  .home-photo div.petit-cercle {
-    position: relative;
-    z-index: 0;
-    top: -1vh;
-    left: 5vw;
-    background-color: rgb(107, 107, 107);
-    right: 20px;
-    height: 70px;
-    width: 70px;
-    border-radius: 300px;
-  }
 
 }
 
 @media (min-width: 922px){
 .home-container {
-  @include _flex(row,center,center);
-  background-color: rgb(236, 236, 236);
+  box-shadow: 0px 2px rgb(49, 49, 49);
+  @include _flex(row,space-around,center);
+  color:#fff;
   width: 80vw;
-  height: 120vh;
+  height: 42em;
 }
 
 .home-photo {
   @include _flex(column,center,center);
-  width: 40%;
+  width: 50%;
+
+  & :hover{
+    width: 60vw;
+    transform: translateX(1vw);
+    transition: 1s;
+  }
 }
 
 .home-photo img {
-  position: absolute;
-  top:118vh;
-  left:24vw;
-  width: 25vw;
-  border-radius: 300px;
-}
-.home-photo div.cercle {
-  position: relative;
-  top: -24vh;
-  left: -6vw;
-  background-color: rgb(34, 34, 34);
-  right: 20px;
-  height: 320px;
-  width: 320px;
-  border-radius: 300px;
-}
+  top:100vh;
+  left:2vw;
+  width: 55vw;
+  z-index: 1;
 
-.home-photo div.petit-cercle {
-  position: relative;
-  top: -12vh;
-  left: 8vw;
-  background-color: rgb(107, 107, 107);
-  right: 20px;
-  height: 80px;
-  width: 80px;
-  border-radius: 300px;
+  & :hover{
+    width:70vw;
+  }
+
 }
 
 .home-presentation {
   @include _flex(column,flex-start,flex-start);
-  padding: 0vw;
-  width: 33%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin:0em;
+  padding: 1.8em;
+  width: 32%;
+  height: 65%;
+  z-index: 2;
 
   & h3{
     margin: 0px;
@@ -156,6 +113,18 @@
 
   & p{
     font-size: 14px;
+    line-height: 30px;
+  }
+
+  & .hand{
+    position:absolute;
+    width:12vw;
+    top:51.2vw;
+    left:62.15vw;
   }
 }
 }
+
+
+
+

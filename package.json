@@ -9,12 +9,17 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-native-video": "^5.2.1",
     "react-pdf": "^6.2.0",
     "react-router-dom": "^5.3.4",
+    "react-svg": "^15.1.17",
     "sass": "^1.56.1",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "react-scripts": "^5.0.1"
   },
   "scripts": {

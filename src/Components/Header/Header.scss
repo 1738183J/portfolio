@@ -3,7 +3,6 @@
 @media (min-width: 320px) {
 
   .header-container {
-    margin-top: 0vh;
     @include _flex(column,center,center);
     color: white;
   }
@@ -21,32 +20,41 @@
   .top{
     @include _flex(row,center,center);
     width: 100%;
-    & span {
+    & button  {
+      cursor: pointer;
+      border:none;
+      visibility: visible;
+      box-shadow: none;
       position: relative;
       left:-10%;
+      color: #fff;
+      background-color: rgb(26, 26, 26);
     }
+
   }
 
   .hero {
+    margin-bottom: 0vh;
     position:relative;
     width: 100%;
   }
 
 .name {
   @include _flex(column,center,flex-start);
-  background: rgba(0, 0, 0, 0.3); 
   position: absolute;
   z-index: 1;
   width:30vh;
   top:18vh;
 
   & h2{
+    text-shadow: 70px 10px 10px rgba(128, 128, 128, 0.8);
     font-size: 24px;
     font-family: 'Nunito-Bold';
     margin: 0px;
   }
 
   & h3 {
+    text-shadow: 30px 12px 7px rgba(128, 128, 128, 0.8);
     font-family: 'Nunito-Medium';
     margin: 0px;
   }
@@ -73,14 +81,13 @@
 
   .name {
     @include _flex(column,center,flex-start);
-    background: rgba(0, 0, 0, 0.3); 
     position: absolute;
     z-index: 1;
     top:22vh;
   }
 
   .top{
-    & span {
+    & button {
       left:-12%;
     }
   }
@@ -96,7 +103,7 @@
   }
   
   .top{
-    & span {
+    & button  {
       font-size: 2em;
       left:-33%;
     }
@@ -135,7 +142,7 @@
 
 .header-container {
   @include _flex(row,center,stretch);
-  margin-top: 12vh;
+  box-shadow: 0px 2px rgb(49, 49, 49);
   width: 80vw;
 }
 
@@ -153,7 +160,9 @@ aside {
 .top{
   @include _flex(row,center,center);
   width: 100%;
-  & span {
+  & button {
+    background: transparent;
+    visibility: hidden;
     display: none;
   }
 }
@@ -165,7 +174,7 @@ aside {
   top: -20vh;
   left: 38%;
 
-  
+
 .nom {
   margin:0px;
   font-size: 32px;
@@ -199,6 +208,8 @@ aside {
 
 .name:hover {
   cursor: pointer;
+   width: 40vw;
+  transition: 1s;
 }
 
 .navbar-container {
@@ -211,5 +222,108 @@ aside {
 .hero {
   width: 100%;
 }
+
+}
+
+
+////////////////////////////////////////////////
+/// 
+/// 
+/// 
+/// 
+/// 
+/// 
+/// 
+
+
+@media (min-width: 320px){
+
+  .navbar {
+    @include _flex(row,center,center);
+    background-color: rgb(26, 26, 26);
+    z-index: 3;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 3px #000;
+    gap:1.5em;
+    transition: 1s;
+    transform: translateY(-100vh);
+  
+
+    & button{
+      color: #fff;
+      background-color: rgb(26, 26, 26);
+      border: none;
+      z-index: 1;
+      cursor: pointer;
+      visibility: visible;
+    }
+  }
+
+  .navbar .responsive-nav{
+    transform: none;
+  }
+
+  nav {
+    @include _flex(column,space-between,center);
+    width: 70%;
+    padding: 0px;
+    margin: 1.3rem;
+
+  }
+  nav a {
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+  }
+  nav :hover {
+    cursor: pointer;
+    color: rgb(214, 214, 214);
+    text-decoration: underline 3px;
+    text-decoration-color: cyan;
+  }
+  
+}
+
+@media (min-width: 992px){
+
+.navbar {
+  @include _flex(row,center,center);
+  border-radius: 2px;
+  background-color: rgb(34, 34, 34);
+  height: 3.2em;
+  width: 100%;
+  box-shadow: 3px 3px rgb(0, 0, 0), 3px 3px rgb(66, 66, 66);
+  transition: none;
+  transform: none;
+
+  & button{
+    display: none;
+  }
+}
+
+nav {
+  @include _flex(row,space-around,center);
+  width: 80%;
+  padding: 0px;
+  margin: 1.3rem;
+}
+nav a {
+  color: rgb(255, 255, 255);
+  list-style: none;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+nav :hover {
+  cursor: pointer;
+  color: rgb(214, 214, 214);
+  text-decoration: underline 3px;
+  text-decoration-color: cyan;
+}
+
+
 
 }

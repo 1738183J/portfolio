@@ -2,6 +2,10 @@
 
 @media (min-width: 320px){
 
+  body{
+    margin:0px;
+  }
+
   .App {
     text-align: center;
   }
@@ -11,17 +15,38 @@
     font-family: 'Nunito-Regular';
   }
   
+  .shadow{
+    margin-top:0vh;
+  }
+
+  footer{
+    @include _flex(column,center,center);
+    height: 10vh;
+    font-size: 12px;
+    font-family: "Quicksand-Regular";
+  }
+  
   
 }
 
 @media (min-width: 922px){
 
-.App {
-
-}
 
 .OnePagerContainer{
   @include _flex(column,flex-start,center);
+}
+
+.shadow{
+  margin-top:18vh;
+  box-shadow: 5px 5px 10px 10px rgb(150, 150, 150), 5px 5px 3px 3px rgb(12, 12, 12);
+  margin-bottom: 18vh;
+}
+
+footer{
+  position: relative;
+  font-size: 14px;
+  bottom:8vh;
+
 }
 
 }

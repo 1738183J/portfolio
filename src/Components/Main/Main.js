@@ -1,17 +1,20 @@
 import './Main.scss';
-import hero2 from '../../Images/hero2.png';
+import Background from '../../Images/AdobeStock_522632252.jpeg';
+import style from '../../Images/style.png';
+
 
 function Main() {
 
   return (
-    <div className="home-container">
+    <div className="home-container" id="aboutContainer" style={{ backgroundImage:`url(${Background})`,  backgroundColor:'#d6d6d6', backgroundSize:'cover', backgroundRepeat: 'no-repeat'}}>
         <div className='home-photo'>
-            <div className='petit-cercle'></div>
-            <div className='cercle'></div>
-            <img src = {hero2} alt=""/>
+            <img src = {style} alt=""/>
         </div>
         <div className='home-presentation'>
-            <h3>WHO AM I ?</h3>
+       
+            <div className="main-title">
+              <h3>WHO AM I ?</h3>
+            </div>
             <p>
             Je me spécialise dans tout ce qui est artistique tel que l'illustration, l'infographie, l'animation d'effets spéciaux et la modélisation de personnage et d'environnement 2D et 3D. 
             </p>
