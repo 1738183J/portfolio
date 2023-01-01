@@ -16,7 +16,7 @@ const Contact = props => {
             <Row className="contact-title">
                 <h2 className="display-4 mb-4">Contact</h2>
                 <MailLogo/>
-                <img src={EmailIcon}/>
+                <img src={EmailIcon} alt="icon"/>
             </Row>
             <Row className="form-contact">
                 <form className="contact_form w-100">
