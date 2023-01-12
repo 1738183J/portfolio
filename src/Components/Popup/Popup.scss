@@ -1,0 +1,194 @@
+@import '../../Styles/_style';
+
+
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    @include _flex(row,center,center);
+}
+
+.style-popup{
+    width:28em;
+    position:absolute;
+    top:1.1em;
+}
+
+
+.popup-inner{
+    margin-top:6em;
+    position: relative;
+    width: 100%;
+    height: 24.5em;
+    max-width: 640px;
+    @include _flex(column,space-between,center);
+
+
+    & .grid-popup{
+        position: relative;
+        margin-left:2.5em;
+        top:-1.8em;
+        @include _flex(row,center,center);
+        height: 16%;
+
+
+        & .hidden{
+        visibility:hidden;
+        }
+        
+        & p{
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1.2em;
+            width: 15em;
+            position:relative;
+            top: 0.7em;
+            left:8.5em;
+        }
+
+        & img{
+            cursor: pointer;
+            position:relative;
+            left: 5.8em;
+            height: 80px;
+            width: 80px;
+        }
+
+        & img:hover{
+            width:95px;
+            height: 95px;
+            transition:0.5s;
+        }
+    }
+
+    & .grid-popup2{
+        @include _flex(row,center,center);
+        height: 30%;
+
+        & .hidden{
+            visibility:hidden;
+            }
+
+        & p:first-of-type{
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1.2em;
+            width: 15em;
+            position:relative;
+            left: -1.5em;
+        }
+
+        & p:last-of-type{
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1.2em;
+            width: 15em;
+            position:relative;
+            right:-2em;
+        }
+
+        & img:first-of-type{
+            cursor: pointer;
+            position:relative;
+            left:0.5em;
+            margin-left: 0em;
+            margin-right: 18em;
+            height: 70px;
+            width: 70px;
+        }
+
+        & img:last-of-type{
+            cursor: pointer;
+            position:relative;
+            right:0.4em;
+            height: 70px;
+            width: 70px;
+        }
+
+        & img:hover{
+            border-radius: 10px;
+            width:85px;
+            height: 85px;
+            transition:0.5s;
+        }
+    }
+
+    & .grid-popup3{
+        @include _flex(row,space-around,center);
+        width: 75em;
+        height: 50%;
+
+        & p:first-of-type{
+            background-color: rgba(0, 0, 0, 0.7);
+            width:15em;
+            padding: 1.2em;
+            position:relative;
+            left: 4em;
+        }
+        
+        & p:last-of-type{
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1.2em;
+            width:15em;
+            position:relative;
+            right:4.5em;
+        }
+
+        & .hidden{
+            visibility:hidden;
+        }
+
+        & img:first-of-type{
+            cursor: pointer;
+            position: relative;
+            left:-2.5em;
+            height: 70px;
+            width: 70px;
+        }
+        
+        & img:last-of-type{
+            cursor: pointer;
+            position: relative;
+            left:2.8em;
+            height: 70px;
+            width: 70px;
+        }
+
+        & img:hover{
+            border-radius: 10px;
+            width:85px;
+            height: 85px;
+            transition:0.5s;
+        }
+    }
+
+    & .close-btn{
+        cursor: pointer;
+        border:none;
+        background: none;
+        color: #fff;
+
+        & img:hover{
+            transition: 0.5s;
+            width:33px;
+            height:33px;
+        }
+    
+        & img{
+            background-color: none;
+            color: #fff;
+            width:2em;
+
+        }
+    }
+
+
+}
+
+
+
+.popup-inner .close-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
