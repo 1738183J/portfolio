@@ -84,7 +84,7 @@
   aside {
     @include _flex(column,center,center);
     & h2:first-child{
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 
@@ -125,8 +125,9 @@ aside {
   font-weight: 400;
 
   & h2:first-child{
-    font-size: 20px;
+    font-size: 24px;
   }
+
 }
 
 
