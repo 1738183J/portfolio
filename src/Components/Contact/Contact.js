@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.scss";
-import {ReactComponent as MailLogo} from '../../Images/email.svg';
+import {ReactComponent as MailLogo} from '../../Images/144-envelope-mail-notification.svg';
 import { Container, Row, Col } from "react-bootstrap";
 import cv from '../../pdf/Cv.pdf';
 import Instagram from '../../Images/instagram.png';
@@ -15,8 +15,7 @@ const Contact = props => {
         <Container>
             <Row className="contact-title">
                 <h2 className="display-4 mb-4">Contact</h2>
-                <MailLogo/>
-                <img src={EmailIcon} alt="icon"/>
+                <MailLogo className="wiggle"/>
             </Row>
             <Row className="form-contact">
                 <form className="contact_form w-100">

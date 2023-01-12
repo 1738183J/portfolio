@@ -18,9 +18,6 @@ const showNavbar = () => {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
             <aside>
                 <div className='top'>
-                <button onClick={showNavbar} className="nav-btn">
-                    <FaBars/>
-                </button>
                 <h2> MY WEBFOLIO</h2>
                 </div>
                 <div className="name">

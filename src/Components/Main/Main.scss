@@ -34,8 +34,35 @@
       font-family: "Quicksand-Light";
       font-weight: 300;
     }
-    
 
+    .icons-presentation{
+      @include _flex(column,flex-start,flex-start);
+      padding-top: 1em;
+      display: none;
+
+        & .bagage{
+          padding-right: 1em;
+          cursor: pointer;
+          background: none;
+          border: none;
+        
+          & img{
+            width:5em;
+          }
+        
+          & img:hover{
+            transition: 1s;
+            transform: rotate(20deg); 
+          }
+        
+        }
+      
+        & .arrow{
+          display: none;
+          width:255px;
+        }
+
+    }
   }
 }
 
@@ -43,7 +70,20 @@
 
   .home-container {
     @include _flex(row,center,center);
-    height: 60vh;
+    height: 36em;
+
+
+    & .icons-presentation{
+      display: inline;
+
+      & .bagage{
+
+        img{
+          width:4.5em;
+        }
+
+      }
+    }
   }
 
   .home-photo {
@@ -52,14 +92,17 @@
 
     & img{
       display: inline;
-      width:60vw;
+      width:68vw;
     }
+
   }
 
   .home-presentation{
     padding:2vw;
     width: 35%;
   }
+
+
 
 
 }
@@ -78,8 +121,8 @@
   width: 50%;
 
   & :hover{
-    width: 60vw;
-    transform: translateX(1vw);
+    width:48em;
+    transform: translateX(1em);
     transition: 1s;
   }
 }
@@ -87,12 +130,9 @@
 .home-photo img {
   top:100vh;
   left:2vw;
-  width: 55vw;
+  width: 44em;
   z-index: 1;
 
-  & :hover{
-    width:70vw;
-  }
 
 }
 
@@ -103,7 +143,6 @@
   margin:0em;
   padding: 1.8em;
   width: 32%;
-  height: 65%;
   z-index: 2;
 
   & h3{
@@ -122,9 +161,49 @@
     top:51.2vw;
     left:62.15vw;
   }
+
+  .icons-presentation{
+    @include _flex(column,flex-start,flex-start);
+
+      & .bagage{
+
+      
+      }
+    
+      & .arrow{
+        display: inline;
+        width:320px;
+      }
+      
+      & .arrow:hover{
+        transition: 0.5s;
+        width:330px;
+      }
+
+  }
+
 }
+
+
 }
 
+/////////////////////////
+/// 
 
 
+@media (min-width: 1200px){
 
+  .home-presentation{
+    height: 66%;
+  }
+
+  .home-photo {
+    & :hover{
+      width:64em;
+    }
+  }
+  
+  .home-photo img {
+    width: 60em;
+  }
+}

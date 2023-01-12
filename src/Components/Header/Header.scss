@@ -17,21 +17,6 @@
     }
   }
 
-  .top{
-    @include _flex(row,center,center);
-    width: 100%;
-    & button  {
-      cursor: pointer;
-      border:none;
-      visibility: visible;
-      box-shadow: none;
-      position: relative;
-      left:-10%;
-      color: #fff;
-      background-color: rgb(26, 26, 26);
-    }
-
-  }
 
   .hero {
     margin-bottom: 0vh;
@@ -86,12 +71,6 @@
     top:22vh;
   }
 
-  .top{
-    & button {
-      left:-12%;
-    }
-  }
-
 }
 
 
@@ -101,18 +80,11 @@
     @include _flex(column,center,center);
     color: white;
   }
-  
-  .top{
-    & button  {
-      font-size: 2em;
-      left:-33%;
-    }
-  }
 
   aside {
     @include _flex(column,center,center);
     & h2:first-child{
-      font-size: 20px;
+      font-size: 24px;
     }
   }
 
@@ -138,7 +110,7 @@
 
 }
 
-@media (min-width: 992px){
+@media (min-width: 922px){
 
 .header-container {
   @include _flex(row,center,stretch);
@@ -157,15 +129,6 @@ aside {
   }
 }
 
-.top{
-  @include _flex(row,center,center);
-  width: 100%;
-  & button {
-    background: transparent;
-    visibility: hidden;
-    display: none;
-  }
-}
 
 .name {
   @include _flex(column,center,flex-start);
@@ -239,19 +202,15 @@ aside {
 @media (min-width: 320px){
 
   .navbar {
+    display: none;
     @include _flex(row,center,center);
+    font-family: "Quicksand-Light";
     background-color: rgb(26, 26, 26);
     z-index: 3;
     position: fixed;
     top:0;
     left:0;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0px 3px #000;
-    gap:1.5em;
-    transition: 1s;
     transform: translateY(-100vh);
-  
 
     & button{
       color: #fff;
@@ -288,7 +247,7 @@ aside {
   
 }
 
-@media (min-width: 992px){
+@media (min-width: 922px){
 
 .navbar {
   @include _flex(row,center,center);
@@ -296,7 +255,7 @@ aside {
   background-color: rgb(34, 34, 34);
   height: 3.2em;
   width: 100%;
-  box-shadow: 3px 3px rgb(0, 0, 0), 3px 3px rgb(66, 66, 66);
+  box-shadow: 0px 3px rgb(10, 10, 10), 3px 3px rgb(114, 114, 114);
   transition: none;
   transform: none;
 
