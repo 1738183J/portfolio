@@ -16,7 +16,6 @@ import IconsPopupLeft from '../IconsPopupLeft';
 
 function Main() {
   const [buttonPopup, setButtonPopup] = useState(false);
-  const [isHovering, setIsHovering] = useState(false);
 
   return (
     <div className="home-container" id="aboutContainer" style={{ backgroundImage:`url(${Background})`,  backgroundColor:'#d6d6d6', backgroundSize:'cover', backgroundRepeat: 'no-repeat'}}>

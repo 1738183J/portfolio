@@ -6,7 +6,6 @@ import cv from '../../pdf/Cv.pdf';
 import Instagram from '../../Images/instagram.png';
 import Linkedin from '../../Images/linkedin.png';
 import Facebook from '../../Images/facebook.png';
-import EmailIcon from "../../Images/144-envelope-mail-notification-outline.gif";
 
 const Contact = props => {
 

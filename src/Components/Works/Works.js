@@ -7,7 +7,6 @@ import { useState } from 'react';
 import {ReactComponent as WorksFile} from '../../Images/blueprint.svg';
 import WorksIcon from "../../Images/blueprint.gif";
 import Ardoise from '../../Images/Ardoise.png';
-import CaptureArdoise from '../../Images/CaptureArdoise.jpg';
 import Portfolio from '../../Images/Portfolio.png';
 
 const Header = props => {

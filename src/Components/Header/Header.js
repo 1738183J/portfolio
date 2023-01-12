@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { FaBars} from "react-icons/fa";
 import Nav from "../Navbar/Navbar";
 import './Header.scss';
 import hero from '../../Images/hero.png';
@@ -8,10 +7,6 @@ import hero from '../../Images/hero.png';
 
 const Header = props => {
     const navRef = useRef();
-
-const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-}
 
     return (
         <div className="header-container">

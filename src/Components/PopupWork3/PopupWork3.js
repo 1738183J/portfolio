@@ -6,7 +6,7 @@ function PopupWork3(props) {
     return (props.trigger) ? (
         <div className='popupWork3'>
             <div className='popupWork3-inner'>
-                <button className="close-btn" onClick={() => props.setTrigger(false)}><img className="remove-btn" src= {Remove}/></button>
+                <button className="close-btn" onClick={() => props.setTrigger(false)}><img className="remove-btn" src= {Remove} alt="remove-btn"/></button>
                 { props.children}
             </div>
         </div>
