@@ -1,5 +1,6 @@
 @import '../../Styles/_style';
 
+@media (min-width: 764px){
 
 .popupWork3{
     @include _flex(column,center,center);
@@ -12,38 +13,33 @@
     background-color: rgba(0,0,0,0.2);
 }
 
-
 .popupWork3-inner{
-    @include _flex(column,space-between,center);
+    @include _flex(column,space-around,center);
+    border-radius: 15px;
+    padding:2.5em;
     background-color: #fff;
-    margin-top:6em;
     position: relative;
-    width: 100%;
-    height: 24.5em;
-    max-width: 640px;
-
-
+    height: 35em;
+    max-width: 55em;
 
     & .close-btn{
-        position:relative;
-        right:-30em;
-        top:-5em;
-        cursor: pointer;
+        @include _flex(row,flex-end,flex-end);
+        position: relative;
+        right:-1.5em;
+        top:-0.6em;
+        align-self: flex-end;
         border:none;
         background: none;
         color: #fff;
-
-        & img:hover{
-            transition: 0.5s;
-            width:33px;
-            height:33px;
-        }
     
         & img{
             background-color: none;
             color: #fff;
             width:2em;
+        }
 
+        & img:hover{
+            cursor: pointer;
         }
     }
 
@@ -51,9 +47,122 @@
 }
 
 
+.grid-site{
+    @include _flex(row,space-around,center);
+    width:100%;
+    height: 100%;
 
-.popup-inner .close-btn{
-    position: absolute;
-    top: 16px;
-    right: 16px;
+    & .text-site{
+        @include _flex(column,flex-start,flex-start);  
+        padding-left: 3em;
+        height: 100%;
+        text-decoration: none;
+
+        & .title-site{
+           margin: 0; 
+        }
+
+        & .paragraph-site{
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+        & .link-site{
+            font-size: 14px;
+        }
+    }
+
+    & .img-site{
+        align-self: flex-start;
+        width:28em;
+    }
+    
+}
+
+}
+
+@media (min-width: 922px){
+
+    .popupWork3{
+        @include _flex(column,center,center);
+        z-index: 2;
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.2);
+    }
+    
+    .popupWork3-inner{
+        @include _flex(column,space-around,center);
+        border-radius: 5px;
+        padding:2.4em;
+        position: relative;
+        height: 40em;
+        max-width: 72em;
+    
+        & .close-btn{
+            @include _flex(row,flex-end,flex-end);
+            align-self: flex-end;
+            position: relative;
+            right:-1.3em;
+            top:-1em;
+            border:none;
+            background: none;
+            color: #fff;
+        
+            & img{
+                background-color: none;
+                color: #fff;
+                width:2em;
+            }
+    
+            & img:hover{
+                cursor: pointer;
+            }
+        }
+    
+    
+    }
+    
+    
+    .grid-site{
+        @include _flex(row,space-around,center);
+        width:100%;
+        height: 100%;
+    
+        & .text-site{
+            @include _flex(column,flex-start,flex-start);  
+            padding-left: 3em;
+            padding-top: 0em;
+            height: 100%;
+            text-decoration: none;
+    
+            & .title-site{
+               margin: 0; 
+            }
+    
+            & .paragraph-site{
+                font-size: 14px;
+                line-height: 30px;
+            }
+
+            & .title2-site{
+                font-size: 14px;
+            }
+
+            & .link-site{
+                font-size: 14px;
+            }
+        }
+    
+        & .img-site{
+            align-self: flex-start;
+            width:42em;
+        }
+        
+    }
+    
+
 }
