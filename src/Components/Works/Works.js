@@ -8,6 +8,7 @@ import {ReactComponent as WorksFile} from '../../Images/blueprint.svg';
 import WorksIcon from "../../Images/blueprint.gif";
 import Ardoise from '../../Images/Ardoise.png';
 import Portfolio from '../../Images/Portfolio.png';
+import Oni from '../../Images/oni.png';
 
 const Header = props => {
     const [buttonPopupWork, setButtonPopupWork] = useState(false);
@@ -56,7 +57,15 @@ const Header = props => {
                         </div> 
                     </PopupWork2>
                     <PopupWork3 trigger={buttonPopupWork3} setTrigger={setButtonPopupWork3}>
-                        <p className='text-site'>bye</p>
+                    <div className='grid-site'>
+                            <img className="img-site" src={Oni} alt=""/>
+                            <div className='text-site'>
+                                <h2 className='title-site'>The oni's origin</h2>
+                                <p className='paragraph-site'>This is a project I made on my free time. This is a documentary Website about a mytical japanese creature and myth that I personnaly found interest in.</p>
+                                <h2 className='title2-site'>Link to it :</h2>
+                                <h2 className='link-site'><a href="https://oniorigin.web.app/">https://oniorigin.web.app/</a></h2>
+                            </div>
+                        </div> 
                     </PopupWork3>
                 </ul>
             </div>
