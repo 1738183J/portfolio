@@ -63,7 +63,7 @@ const Header = props => {
                                 <h2 className='title-site'>The oni's origin</h2>
                                 <p className='paragraph-site'>This is a project I made on my free time. This is a documentary Website about a mytical japanese creature and myth that I personnaly found interest in.</p>
                                 <h2 className='title2-site'>Link to it :</h2>
-                                <h2 className='link-site'><a href="https://oniorigin.web.app/">https://oniorigin.web.app/</a></h2>
+                                <h2 className='link-site'><a href="https://oniorigin.firebaseapp.com/">https://oniorigin.firebaseapp.com/</a></h2>
                             </div>
                         </div> 
                     </PopupWork3>
